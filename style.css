@@ -12,7 +12,12 @@ body{
     overflow: hidden;
 }
 
-#nav_menu{  
+#main {
+    height: 87.75vh;
+    border: .75vh solid rgb(37, 35, 35);
+}
+
+#nav_menu{
     border: .5vh solid rgb(37, 35, 35);
 }
 
@@ -29,9 +34,16 @@ body{
 
 .conteudo{
     margin-top: 20vh;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.conteudo.ativo {
+    display: flex;
+    opacity: 1;
 }
 
 .conteudo img{
@@ -74,19 +86,23 @@ button:hover i{
     color: antiquewhite;
 }
 
-#rodape{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    border:  black;
-    padding: .5vh;
-    background-color: rgb(37, 35, 35);
-    color: antiquewhite;
+#tracos {
     display: flex;
-    text-align: center;
     justify-content: center;
+    position: absolute;
+    bottom: 5.5vh;
+    gap: 1.25vh;
+    width: 100%;
 }
 
-#rodape p{
-    margin: 0; 
+#tracos p{
+    border-radius: 2vh;
+    border: .25vh solid black;
+    padding: .5vh 3.5vh;
+    background-color: antiquewhite;
+}
+
+#tracos .traco.ativo{
+    background-color:  rgb(37, 35, 35);
+    transition: opacity 0.8s ease;
 }
