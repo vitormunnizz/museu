@@ -39,4 +39,12 @@ timer = setInterval(() => {
     mudar_traco(1)
 }, 10000);
 
-var feedback = document.getElementById("feedback_input")
+let list = []
+
+function feedback_list_save() {
+    let feedback = document.getElementById("feedback_input").value.trim()
+    if (feedback !== "") {
+        list.push(feedback)
+        document.getElementById("feedback_input").value = ""
+    }
+}
