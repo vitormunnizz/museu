@@ -38,3 +38,5 @@ timer = setInterval(() => {
     mudar_pagina(1)
     mudar_traco(1)
 }, 10000);
+
+var feedback = document.getElementById("feedback_input")

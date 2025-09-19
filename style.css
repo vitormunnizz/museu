@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-body{
+body {
     background-color: antiquewhite; 
     color: rgb(37, 35, 35);
     overflow: hidden;
@@ -17,11 +17,15 @@ body{
     border: .75vh solid black;
 }
 
-#nav_menu{
+#nav_menu {
     color: antiquewhite;
 }
 
-#menu_list{
+#nav_menu a{
+    color: antiquewhite;
+}
+
+#menu_list {
     display: flex;
     background-color: black;
     align-items: center;
@@ -35,14 +39,6 @@ body{
 
 #menu_item_border{
     margin: 0vh 5vh;
-}
-
-#menu_item_border button{
-    cursor: pointer;
-    background-color: transparent;
-    color: antiquewhite;
-    border: none;
-    font-size: 3vh;
 }
 
 .conteudo{
@@ -90,4 +86,68 @@ body{
 #tracos .traco.ativo{
     background-color:  rgb(37, 35, 35);
     transition: opacity 0.8s ease;
+}
+
+#body_feedback_contato{
+    background-color:  rgb(37, 35, 35);
+}
+
+#feedback_contato{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#container_feedback_contato{
+    border-radius: 5vh;
+    border: .5rem solid black;
+    background-color:antiquewhite;
+    margin: 0vh 50vh;
+    padding: 8vh 10vh;
+    color: rgb(37, 35, 35);
+}
+
+#container_feedback_contato h1{
+    font-size: 5.5vh;
+    margin-bottom: 2vh;
+}
+
+#container_feedback_contato h2{
+    font-size: 3.75vh;
+    margin-bottom: 2vh;
+}
+
+#container_feedback_contato p{
+    margin-bottom: 2vh;
+}
+
+#feedback_input{ 
+    width: 75vh;
+    padding: 5vh 2vh 5vh 2vh;
+    border-radius: 2vh;
+}
+
+#feedback_input::placeholder{
+    color:  rgb(37, 35, 35);
+}
+
+#button_feedback_contato{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10vh;
+    margin-top: 2vh;
+}
+
+#button_feedback_contato button{
+    cursor: pointer;
+    padding: 2vh 7vh;
+    border-radius: 2vh;
+    background-color: rgb(37, 35, 35);
+    color: antiquewhite;
+}
+
+#button_feedback_contato button:hover{
+    background-color: black;
 }
