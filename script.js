@@ -1,10 +1,5 @@
-const back = document.getElementById("back")
-const next = document.getElementById("next")
-
 const conteudo = document.querySelectorAll(".conteudo")
-
 const traco = document.querySelectorAll(".traco")
-
 
 let timer;
 let ativoConteudo = 0;
@@ -38,18 +33,8 @@ function mudar_traco(i) {
     traco[ativoTraco].classList.add("ativo");
 }
 
-
-back.addEventListener('click', () => {
-    mudar_pagina(-1)
-    mudar_traco(-1)
-})
-
-next.addEventListener('click', () => {
-    mudar_pagina(1)
-    mudar_traco(1)
-})
-
 clearInterval(timer)
 timer = setInterval(() => {
     mudar_pagina(1)
-}, 30000);
+    mudar_traco(1)
+}, 10000);
